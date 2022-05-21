@@ -12,13 +12,13 @@ from mmcv.cnn.utils import revert_sync_batchnorm
 from mmcv.runner import get_dist_info, init_dist
 from mmcv.utils import Config, DictAction, get_git_hash
 
-from uwmgit.mmseg import __version__
-from uwmgit.mmseg.apis import set_random_seed, train_segmentor
+from mmseg import __version__
+from mmseg.apis import set_random_seed, train_segmentor
 # from mmseg.datasets import build_dataset
-from uwmgit.mmseg.models import build_segmentor
-from uwmgit.mmseg.utils import collect_env, get_root_logger
+from mmseg.models import build_segmentor
+from mmseg.utils import collect_env, get_root_logger
 
-from uwmgit.mmseg.datasets import build_dataset
+from mmseg.datasets import build_dataset
 
 
 def parse_args():
